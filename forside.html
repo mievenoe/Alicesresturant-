@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alices Resturant menuskærm</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/ofn8tyx.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/ofn8tyx.css">
+	</head>
+	<body>
+		<section class="menu">
+			<div class="menupunkter">
+				<h2 id="tekst1">Aften Menu</h2>
+				<p id="tekst2">
+					Serveres fra kl.16 - kl.20. <br />
+					Køkkenet lukker for bestillinger <br />
+					30min. før luk.
+				</p>
+				<img id="deco" src="images/deco.png" alt="en dekoration der adskiller tekst" />
+				<a id="forret" href="">Forretter</a>
+				<p>* * *</p>
+				<a href="">Hovedretter</a>
+				<p>* * *</p>
+				<a href="">Desserter</a>
+				<p>* * *</p>
+				<a href="">Drikkevare</a>
+			</div>
+		</section>
+
+		<section class="view">
+			<h2>Forretter</h2>
+			<hr />
+			<div id="for1" class="order">
+				<h3>Lakse tartar</h3>
+				<img src="images/forret1.jpg" alt="" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap1">Tilføj til bestillingen</button>
+				<button onclick="this.parentElement.remove();visSum(79);" class="minus" id="fjern1">Slet</button>
+				<hr />
+			</div>
+			<div id="for2" class="order">
+				<h3>Risotto med rejer</h3>
+				<img src="images/forret2.jpg" alt="" id="test" /> <br />
+				<p>Pris: 73,-</p>
+				<button class="add" id="xknap2">Tilføj til bestillingen</button>
+				<button onclick="this.parentElement.remove();visSum(73);" class="minus" id="fjern2">Slet</button>
+				<hr />
+			</div>
+			<div id="for3" class="order">
+				<h3>Kyllingebryst med ganityr</h3>
+				<img src="images/forret3.jpg" alt="" id="test" /> <br />
+				<p>Pris: 85,-</p>
+				<button class="add" id="xknap3">Tilføj til bestillingen</button>
+				<button onclick="this.parentElement.remove();visSum(85);" class="minus" id="fjern3">Slet</button>
+				<hr />
+			</div>
+			<h2>Hovedretter</h2>
+			<hr />
+			<div id="hov1" class="order">
+				<h3>Hussets nudler</h3>
+				<img src="images/hovedret1.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap4">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern4">Slet</button>
+				<hr />
+			</div>
+			<div id="hov2" class="order">
+				<h3>Hussets Muslinger</h3>
+				<img src="images/hovedret2.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap5">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern5">Slet</button>
+				<hr />
+			</div>
+			<div id="hov3" class="order">
+				<h3>Pokebowl med rejer</h3>
+				<img src="images/hovedret3.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap6">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern6">Slet</button>
+				<hr />
+			</div>
+			<div id="hov4" class="order">
+				<h3>Pokebowl med laks</h3>
+				<img src="images/hovedret4.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap7">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern7">Slet</button>
+				<hr />
+			</div>
+			<div id="hov5" class="order">
+				<h3>Hasselbagte kartofler med grønt</h3>
+				<img src="images/hovedret5.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap8">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern8">Slet</button>
+				<hr />
+			</div>
+			<div id="hov6" class="order">
+				<h3>Fong-tang</h3>
+				<img src="images/hovedret6.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap9">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern9">Slet</button>
+				<hr />
+			</div>
+			<h2>Desserter</h2>
+			<hr />
+			<div id="des1" class="order">
+				<h3>Lime skum med passionsfrugt og guld</h3>
+				<img src="images/dessert1.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap10">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern10">Slet</button>
+				<hr />
+			</div>
+			<div id="des2" class="order">
+				<h3>Sommer tiramisu</h3>
+				<img src="images/dessert2.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap11">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern11">Slet</button>
+				<hr />
+			</div>
+			<div id="des3" class="order">
+				<h3>Kanel & karamel is med bananer</h3>
+				<img src="images/dessert3.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap12">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern12">Slet</button>
+				<hr />
+			</div>
+			<div id="des4" class="order">
+				<h3>Citrusfrugter med sæsonens bær</h3>
+				<img src="images/dessert4.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap13">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern13">Slet</button>
+				<hr />
+			</div>
+			<div id="des5" class="order">
+				<h3>Passionsfrugt & negtarin med vaniljeskum</h3>
+				<img src="images/dessert5.jpg" alt="" id="test" /> <br />
+				<p>Pris: 79,-</p>
+				<button class="add" id="xknap14">Tilføj til bestillingen</button>
+				<button class="minus" id="fjern14">Slet</button>
+				<hr />
+			</div>
+
+			<h2>Drikkevare</h2>
+		</section>
+
+		<section class="kurv">
+			<h2>Din bestilling</h2>
+			<table id="ordersList"></table>
+			<hr />
+			<button id="køkkenknap1">Send til køkkenet</button>
+			<button id="rydknap1">Ryd bestillingen</button>
+			<div id="bestillinger"></div>
+			<h2>I Alt:</h2>
+			<div id="ialt"></div>
+			<button id="køkkenknap2">Send til køkkenet</button>
+			<button id="rydknap2">Ryd bestillingen</button>
+		</section>
+
+		<script src="JS/app.js"></script>
+		<script></script>
+	</body>
+</html>
